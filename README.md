@@ -1,6 +1,6 @@
 # fb_like_sti
 
-![Uploading pic1.png…]()
-![Uploading pic2.png…]()
-![Uploading pic3.png…]()
-![Uploading pic4.png…]()
+![](icons/pic1.png)
+![](icons/pic2.png)
+![](icons/pic3.png)
+![](icons/pic4.png)
