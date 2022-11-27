@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#ffffff"
+    app:cardCornerRadius="2dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="45dp"
+            android:backgroundTint="@color/white"
+            android:layout_height="45dp"
+            app:cardCornerRadius="90dp">
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/sti_logo">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/v2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/display_name"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"></View>
+        <TextView
+            android:id="@+id/display_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/card1"
+            android:text="STI College Global City"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginEnd="10dp"
+            android:text="nov/12/12 5/23/43/pm"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textSize="10dp"
+            android:textStyle="bold"></TextView>
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_below="@id/card1"
+            android:layout_marginTop="10dp"></View>
+
+        <TextView
+            android:id="@+id/post_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v1"
+            android:layout_marginBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"></TextView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_below="@+id/post_text"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="200dp">
+            <ImageView
+                android:id="@+id/image_view_pic"
+                android:src="@color/yellow"
+                android:layout_below="@+id/post_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/like"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/card2"
+            android:background="@drawable/like"
+
+            android:layout_marginStart="20dp"
+            ></ImageView>
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/comment"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/card2"
+            android:background="@drawable/comment"
+            ></ImageView>
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/share"
+            android:layout_marginEnd="20dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/card2"
+            android:background="@drawable/share"
+            ></ImageView>
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments">
+
+        </TextView>
+
+
+        <EditText
+            android:hint="comments"
+            android:layout_below="@id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment_text"></EditText>
+
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/send"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/text"
+            android:background="@drawable/send"
+            ></ImageView>
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

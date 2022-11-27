@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_house_solid"
+        android:title="Home">
+
+    </item>
+
+    <item
+        android:id="@+id/nav_events"
+        android:enabled="true"
+        android:icon="@drawable/ic_calendar_days_solid"
+        android:title="Events">
+
+    </item>
+
+
+    <item
+        android:id="@+id/nav_3"
+        android:enabled="true"
+        android:icon="@drawable/ic_bullhorn_solid"
+        android:title="Anouncements">
+    </item>
+
+
+    <item
+        android:id="@+id/nav_4"
+        android:enabled="true"
+        android:icon="@drawable/ic_user_solid"
+        android:title="Profile">
+    </item>
+</menu>
