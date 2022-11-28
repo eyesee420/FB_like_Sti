@@ -3,9 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card1"
+        android:id="@+id/announcement_card_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -19,7 +18,7 @@
             android:layout_margin="3dp"
             app:cardCornerRadius="4dp">
             <ImageView
-                android:id="@+id/shop_imageview"
+                android:id="@+id/announcement_image"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:scaleType="fitXY"
@@ -27,45 +26,39 @@
             </ImageView>
         </androidx.cardview.widget.CardView>
     </com.google.android.material.card.MaterialCardView>
-
-
     <TextView
-        android:id="@+id/shop_name_txt"
+        android:id="@+id/announcement_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/card1"
+        android:layout_toRightOf="@+id/announcement_card_view"
         android:paddingStart="15dp"
-        android:text="Tittle"
+        android:text="Title"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
         android:textSize="16dp"></TextView>
     <TextView
-        android:id="@+id/Discription"
-        android:layout_below="@+id/shop_name_txt"
+        android:id="@+id/announcement_description"
+        android:layout_below="@+id/announcement_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/card1"
+        android:layout_toRightOf="@+id/announcement_card_view"
         android:paddingStart="15dp"
-        android:text="Discriptions"
+        android:text="Description"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
         android:textSize="16dp"></TextView>
-
     <TextView
-        android:id="@+id/date_time"
-        android:layout_below="@+id/Discription"
+        android:id="@+id/announcement_date_and_time"
+        android:layout_below="@+id/announcement_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/card1"
+        android:layout_toRightOf="@+id/announcement_card_view"
         android:paddingStart="15dp"
-        android:text="nov/12/ 5/12/43/pm"
+        android:text="Nov 12, 2022 5:12:43 PM"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
         android:textSize="16dp"></TextView>
-
-
-
 </RelativeLayout>
