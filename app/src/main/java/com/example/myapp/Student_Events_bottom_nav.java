@@ -71,7 +71,7 @@ public class Student_Events_bottom_nav extends AppCompatActivity {
     private void setUpRecyclerView() {
 
 
-        Query query = db.collection("events");
+        Query query = db.collection("Events");
 
         //  Query query1 =db.collection("shops and products").getFirestore().collectionGroup("my shops");
 
@@ -82,5 +82,16 @@ public class Student_Events_bottom_nav extends AppCompatActivity {
         binding.recyclerview.setHasFixedSize(true);
         binding.recyclerview.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         binding.recyclerview.setAdapter(adapter);
+    }
+    @Override
+    protected void onStart() {
+        super.onStart();
+        adapter.startListening();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        adapter.stopListening();
     }
 }
