@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">My App</string>
+    <string name="profile_picture">ProfilePicture</string>
+    <string name="profile_name">Lopez, Percival IV</string>
+    <string name="profile_username">\@Perc4al</string>
+    <string name="profile_student_number">2000078934</string>
+    <string name="profile_student_email">lopez.078934@globalcity.sti.edu.ph</string>
+    <string name="profile_hint_bio">Tell about yourself.</string>
+    <string name="profile_hint_personal_email">percijb4@yahoo.com</string>
+    <string name="profile_hint_contact_number">09#########</string>
+    <string name="profile_label_student_number">Student Number</string>
+    <string name="profile_label_student_email">Student E-Mail</string>
+    <string name="profile_label_bio">Bio</string>
+    <string name="profile_label_personal_email">Personal E-mail</string>
+    <string name="profile_label_contact_number">Contact Number</string>
+    <string name="profile_button_update">Update</string>
+    <string name="profile_button_cancel">Cancel</string>
 </resources>
