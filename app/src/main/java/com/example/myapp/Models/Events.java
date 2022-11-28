@@ -1,16 +1,17 @@
 package com.example.myapp.Models;
 
 public class Events {
-    String image_uri ,Tittle  , Descriptions ,Date_time,  event_Id ;
+    String Tittle , Date_time , Descriptions, image_uri , event_Id;
 
     public Events() {
     }
 
-    public Events(String image_uri, String tittle, String descriptions, String date_time) {
-        this.image_uri = image_uri;
+    public Events(String image_uri, String tittle, String descriptions, String date_time, String event_Id) {
         Tittle = tittle;
-        Descriptions = descriptions;
         Date_time = date_time;
+        Descriptions = descriptions;
+        this.image_uri = image_uri;
+        this.event_Id = event_Id;
     }
 
     public String getTittle() {

@@ -46,13 +46,14 @@ tools:context=".Admin_home">
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
-<androidx.recyclerview.widget.RecyclerView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_above="@id/bottom_navigation_admin"
-    android:layout_below="@id/top_nav">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation_admin"
+        android:layout_below="@id/top_nav">
 
-</androidx.recyclerview.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 
 
     <ImageView

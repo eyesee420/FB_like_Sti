@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -41,19 +42,23 @@ public class post_feed_adapter extends FirestoreRecyclerAdapter<post_feed, post_
     public class holder extends RecyclerView.ViewHolder {
         Context context;
         ImageView image_view_pic;
+        TextView post_text ,date_time;
 
 
         public holder(@NonNull View itemView) {
             super(itemView);
             context =itemView.getContext();
             image_view_pic = itemView.findViewById(R.id.image_view_pic);
+            post_text = itemView.findViewById(R.id.post_text);
+            date_time = itemView.findViewById(R.id.date_time);
         }
 
         public void bind(post_feed model) {
             Glide.with(context.getApplicationContext())
                     .load(model.getImage_uri())
                     .into(image_view_pic);
-
+            post_text.setText(model.getPost_text());
+            date_time.setText(model.getDatetime());
 
         }
     }

@@ -5,172 +5,191 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Admin_Profile">
+
     <LinearLayout
+        android:layout_above="@id/bottom_navigation_admin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/profile_card_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            app:cardBackgroundColor="@android:color/darker_gray"
-            android:layout_marginBottom="15dp"
             android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardBackgroundColor="@android:color/darker_gray"
             app:cardCornerRadius="6dp">
+
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
                 app:cardCornerRadius="4dp">
+
                 <ImageView
                     android:id="@+id/admin_profile_profile_picture"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+                    android:contentDescription="@string/profile_picture"
                     android:scaleType="fitXY"
-                    android:src="@drawable/ic_baseline_image_24"
-                    android:contentDescription="@string/profile_picture">
-                </ImageView>
+                    android:src="@drawable/ic_baseline_image_24"></ImageView>
             </androidx.cardview.widget.CardView>
         </com.google.android.material.card.MaterialCardView>
+
         <TextView
             android:id="@+id/profile_name"
-            android:text="@string/profile_name"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-            android:textSize="16sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:text="@string/profile_name"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textSize="16sp" />
+
         <TextView
             android:id="@+id/profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="@string/profile_username"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
             android:textColor="@color/grey"
-            android:textSize="16sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            android:textSize="16sp" />
+
         <TextView
             android:id="@+id/profile_student_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginEnd="20sp"
             android:text="@string/profile_label_student_number"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-            android:textSize="16sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:layout_marginTop="25sp"
-            android:layout_marginStart="20sp"
-            android:layout_marginEnd="20sp"/>
+            android:textSize="16sp" />
+
         <TextView
             android:id="@+id/profile_student_number_display"
-            android:text="@string/profile_student_number"
-            android:textColor="@color/grey"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-            android:textSize="16sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20sp"
-            android:layout_marginEnd="20sp" />
+            android:layout_marginEnd="20sp"
+            android:text="@string/profile_student_number"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/grey"
+            android:textSize="16sp" />
+
         <TextView
             android:id="@+id/profile_student_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginEnd="20sp"
             android:text="@string/profile_label_student_email"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-            android:textSize="16sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:layout_marginTop="25sp"
-            android:layout_marginStart="20sp"
-            android:layout_marginEnd="20sp"/>
+            android:textSize="16sp" />
+
         <TextView
             android:id="@+id/profile_student_email_display"
-            android:text="@string/profile_student_email"
-            android:textColor="@color/grey"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-            android:textSize="16sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20sp"
-            android:layout_marginEnd="20sp" />
+            android:layout_marginEnd="20sp"
+            android:text="@string/profile_student_email"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/grey"
+            android:textSize="16sp" />
+
         <TextView
             android:id="@+id/profile_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginEnd="20sp"
             android:text="@string/profile_label_bio"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-            android:textSize="16sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:layout_marginTop="25sp"
-            android:layout_marginStart="20sp"
-            android:layout_marginEnd="20sp"/>
+            android:textSize="16sp" />
+
         <EditText
             android:id="@+id/profile_bio_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp"
             android:hint="@string/profile_hint_bio"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-            android:textSize="16sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20sp"
-            android:layout_marginEnd="20sp" />
+            android:textSize="16sp" />
+
         <TextView
             android:id="@+id/profile_personal_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="25sp"
+            android:layout_marginEnd="20sp"
             android:text="@string/profile_label_personal_email"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-            android:textSize="16sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:layout_marginTop="25sp"
-            android:layout_marginStart="20sp"
-            android:layout_marginEnd="20sp"/>
+            android:textSize="16sp" />
+
         <EditText
             android:id="@+id/profile_personal_email_edit_text"
-            android:hint="@string/profile_hint_personal_email"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-            android:textSize="16sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20sp"
-            android:layout_marginEnd="20sp"/>
+            android:layout_marginEnd="20sp"
+            android:hint="@string/profile_hint_personal_email"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textSize="16sp" />
+
         <TextView
             android:id="@+id/profile_contact_number"
-            android:text="@string/profile_label_contact_number"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-            android:textSize="16sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
             android:layout_marginStart="20sp"
-            android:layout_marginEnd="20sp"/>
+            android:layout_marginEnd="20sp"
+            android:text="@string/profile_label_contact_number"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textSize="16sp" />
+
         <EditText
             android:id="@+id/profile_contact_number_edit_text"
-            android:hint="@string/profile_hint_contact_number"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-            android:textSize="16sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20sp"
-            android:layout_marginEnd="20sp"/>
+            android:layout_marginEnd="20sp"
+            android:hint="@string/profile_hint_contact_number"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textSize="16sp" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:layout_marginTop="40sp"
             android:layout_marginStart="20sp"
+            android:layout_marginTop="40sp"
             android:layout_marginEnd="20sp"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/profile_update_button"
-                android:text="@string/profile_button_update"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="?android:attr/buttonBarButtonStyle"/>
+                android:text="@string/profile_button_update" />
+
             <Button
                 android:id="@+id/profile_cancel_button"
-                android:text="@string/profile_button_cancel"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="@string/profile_button_cancel" />
         </LinearLayout>
     </LinearLayout>
     <com.google.android.material.bottomnavigation.BottomNavigationView

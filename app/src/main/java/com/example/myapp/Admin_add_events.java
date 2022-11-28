@@ -91,7 +91,7 @@ public class Admin_add_events extends AppCompatActivity {
 
                         String event_Id = db.collection("Events").document().getId();
 
-                        Events events_model = new Events (uri.toString(),tittle,discription,mytime);
+                        Events events_model = new Events (uri.toString(),tittle,discription,mytime,event_Id);
 
 
                       //  FirebaseUser userid = mAuth.getCurrentUser();

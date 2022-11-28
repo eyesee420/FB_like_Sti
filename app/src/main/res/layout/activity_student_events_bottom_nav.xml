@@ -56,38 +56,21 @@
     </androidx.recyclerview.widget.RecyclerView>
 
 
-    <FrameLayout
-        style="?attr/actionButtonStyle"
-        android:layout_above="@id/bottom_navigation_users"
+    <androidx.cardview.widget.CardView
+        android:layout_width="45dp"
         android:layout_alignParentRight="true"
+        android:layout_above="@id/bottom_navigation_users"
+        app:cardCornerRadius="90dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clipToPadding="false"
-        android:focusable="true">
-
-
+        android:layout_marginBottom="20dp"
+        android:layout_height="45dp">
         <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_gravity="center"
-            android:src="@drawable/chat"/>
-        <TextView
-            android:id="@+id/cart_badge"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_gravity="right|end|top"
-            android:layout_marginEnd="-5dp"
-            android:layout_marginRight="-5dp"
-            android:layout_marginTop="3dp"
-            android:background="@drawable/badge_background"
-            android:gravity="center"
-            android:padding="3dp"
-            android:textColor="@android:color/white"
-            android:text="0"
-            android:textSize="10sp"/>
-    </FrameLayout>
+            android:id="@+id/addfeed_btn"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/vr_me"></ImageView>
+    </androidx.cardview.widget.CardView>
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

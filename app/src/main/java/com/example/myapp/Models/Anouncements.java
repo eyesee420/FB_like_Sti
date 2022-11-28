@@ -2,18 +2,31 @@ package com.example.myapp.Models;
 
 public class Anouncements {
 
-    String  tittle , How ,when , what , anouncement_id ;
+    String  image_uri  , How ,when , what , anouncement_id  ,date_time;
 
     public Anouncements() {
+
     }
 
-    public String getTittle() {
-        return tittle;
+    public Anouncements(String image_uri, String how, String when, String what, String anouncement_id , String date_time) {
+        this.image_uri = image_uri;
+        How = how;
+        this.when = when;
+        this.what = what;
+        this.anouncement_id = anouncement_id;
+        this.date_time = date_time;
     }
 
-    public void setTittle(String tittle) {
-        this.tittle = tittle;
+
+
+    public String getImage_uri() {
+        return image_uri;
     }
+
+    public void setImage_uri(String image_uri) {
+        this.image_uri = image_uri;
+    }
+
 
     public String getHow() {
         return How;
@@ -45,5 +58,13 @@ public class Anouncements {
 
     public void setAnouncement_id(String anouncement_id) {
         this.anouncement_id = anouncement_id;
+    }
+
+    public String getDate_time() {
+        return date_time;
+    }
+
+    public void setDate_time(String date_time) {
+        this.date_time = date_time;
     }
 }

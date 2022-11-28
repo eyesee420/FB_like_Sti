@@ -2,65 +2,85 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="10dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout
-        android:layout_width="match_parent"
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card1"
+
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/announcement_title"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="@android:color/darker_gray"
+
+        android:layout_marginStart="5dp"
+        app:cardCornerRadius="6dp">
+        <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:paddingStart="15dp"
-            android:paddingEnd="15dp"
-            android:text="Title"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-            android:textStyle="bold"
-            android:textSize="20sp"/>
-        <TextView
-            android:id="@+id/announcement_description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:paddingStart="15dp"
-            android:paddingEnd="15dp"
-            android:text="Description"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-            android:textSize="16sp"/>
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/announcement_card_view"
-            android:layout_width="match_parent"
-            android:layout_height="480dp"
-            android:layout_marginTop="15dp"
-            app:cardBackgroundColor="@android:color/darker_gray"
-            android:layout_marginBottom="15dp"
-            android:layout_marginStart="5dp"
-            app:cardCornerRadius="6dp">
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="3dp"
-                app:cardCornerRadius="4dp">
-                <ImageView
-                    android:id="@+id/announcement_image"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/ic_baseline_image_24"/>
-            </androidx.cardview.widget.CardView>
-        </com.google.android.material.card.MaterialCardView>
-        <TextView
-            android:id="@+id/announcement_date_and_time"
-            android:text="Posted at Nov 12, 2022 5:12:43 PM"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-            android:textSize="16sp"
-            android:textColor="@color/grey"
-            android:layout_gravity="end"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:paddingStart="15dp"
-            android:paddingEnd="15dp"/>
-    </LinearLayout>
+            android:layout_margin="3dp"
+            app:cardCornerRadius="4dp">
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_image_24">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:id="@+id/what"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/card1"
+        android:paddingStart="15dp"
+        android:text="WHAT ? "
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textSize="16dp"></TextView>
+    <TextView
+        android:id="@+id/when"
+        android:layout_below="@+id/what"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/card1"
+        android:paddingStart="15dp"
+        android:text="WHEN ?"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textSize="16dp"></TextView>
+    <TextView
+        android:id="@+id/how"
+        android:layout_below="@+id/when"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/card1"
+        android:paddingStart="15dp"
+        android:text="HOW ?"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textSize="16dp"></TextView>
+
+
+    <TextView
+        android:id="@+id/date_time"
+        android:layout_below="@+id/card1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:paddingStart="10dp"
+        android:text="nov/12/ 5/12/43/pm"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textSize="16dp"></TextView>
+
+
 </RelativeLayout>
