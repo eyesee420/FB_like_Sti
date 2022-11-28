@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".anouncement_intent">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY">
+    </ImageView>
+    <TextView
+        android:layout_below="@id/image_view"
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="what ? "
+        android:textAlignment="center"
+        android:textSize="30dp"></TextView>
+    <TextView
+        android:id="@+id/t2"
+        android:layout_below="@id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="how ? "
+        android:textAlignment="center"
+        android:textSize="30dp"></TextView>
+    <TextView
+        android:id="@+id/t3"
+        android:layout_below="@id/t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="when ? "
+        android:textAlignment="center"
+        android:textSize="30dp"></TextView>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="back"></Button>
+
+</RelativeLayout>

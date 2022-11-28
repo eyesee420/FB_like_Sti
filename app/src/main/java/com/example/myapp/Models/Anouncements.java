@@ -1,6 +1,8 @@
 package com.example.myapp.Models;
 
-public class Anouncements {
+import java.io.Serializable;
+
+public class Anouncements implements Serializable {
 
     String  image_uri  , How ,when , what , anouncement_id  ,date_time;
 
@@ -8,7 +10,7 @@ public class Anouncements {
 
     }
 
-    public Anouncements(String image_uri, String how, String when, String what, String anouncement_id , String date_time) {
+    public Anouncements(String image_uri, String what , String how, String when, String anouncement_id , String date_time) {
         this.image_uri = image_uri;
         How = how;
         this.when = when;

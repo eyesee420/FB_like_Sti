@@ -5,6 +5,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -41,7 +42,8 @@ public class post_feed_adapter extends FirestoreRecyclerAdapter<post_feed, post_
 
     public class holder extends RecyclerView.ViewHolder {
         Context context;
-        ImageView image_view_pic;
+        ImageView image_view_pic, comment , send;
+        EditText comment_text;
         TextView post_text ,date_time;
 
 
@@ -51,7 +53,20 @@ public class post_feed_adapter extends FirestoreRecyclerAdapter<post_feed, post_
             image_view_pic = itemView.findViewById(R.id.image_view_pic);
             post_text = itemView.findViewById(R.id.post_text);
             date_time = itemView.findViewById(R.id.date_time);
+            comment = itemView.findViewById(R.id.comment);
+            send = itemView.findViewById(R.id.send);
+            comment_text = itemView.findViewById(R.id.comment_text);
+
+            comment.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    send.setVisibility(View.VISIBLE);
+                    comment_text.setVisibility(View.VISIBLE);
+                }
+            });
+
         }
+
 
         public void bind(post_feed model) {
             Glide.with(context.getApplicationContext())

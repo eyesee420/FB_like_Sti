@@ -96,6 +96,7 @@
             android:layout_marginBottom="5dp"
             android:layout_height="400dp">
             <ImageView
+
                 android:id="@+id/image_view_pic"
                 android:src="@color/yellow"
                 android:scaleType="fitXY"
@@ -116,6 +117,7 @@
             ></ImageView>
 
         <ImageView
+
             android:id="@+id/comment"
             android:layout_width="40dp"
             android:layout_height="40dp"
@@ -147,6 +149,7 @@
 
 
         <EditText
+            android:visibility="gone"
             android:hint="comments"
             android:layout_below="@id/text"
             android:layout_width="match_parent"
@@ -155,6 +158,7 @@
 
 
         <ImageView
+            android:visibility="gone"
             android:layout_alignParentEnd="true"
             android:id="@+id/send"
             android:layout_marginTop="10dp"

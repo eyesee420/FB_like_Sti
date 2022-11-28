@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -71,6 +72,16 @@ public class Student_Home_bottom_nav extends AppCompatActivity {
         });
 
         setUpRecyclerView();
+
+
+        binding.btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse("https://drive.google.com/drive/folders/11aismN00Otyq3g8uP08ES9kQqr5BVisR?fbclid=IwAR2ZuHQAZoV13oQkpDCGLxWyR8UFnybJEu3KtvcWLmGi3MNURiK9lI2uyqw");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
 
     }
 

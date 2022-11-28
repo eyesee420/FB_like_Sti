@@ -1,6 +1,8 @@
 package com.example.myapp.Adapters;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +16,7 @@ import com.bumptech.glide.Glide;
 import com.example.myapp.Models.Anouncements;
 import com.example.myapp.Models.Events;
 import com.example.myapp.R;
+import com.example.myapp.anouncement_intent;
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 
@@ -34,6 +37,7 @@ public class anouncement_adapter extends FirestoreRecyclerAdapter<Anouncements, 
     }
     public class holder extends RecyclerView.ViewHolder {
         Context context;
+        Anouncements model;
         ImageView image_view;
         TextView what , when ,how, date_time;
         public holder(@NonNull View itemView) {
@@ -44,6 +48,16 @@ public class anouncement_adapter extends FirestoreRecyclerAdapter<Anouncements, 
             when = itemView.findViewById(R.id.announcement_when);
             how = itemView.findViewById(R.id.announcement_how);
             date_time = itemView.findViewById(R.id.announcement_date_time);
+
+//            itemView.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    Intent intent = new Intent(itemView.getContext(), anouncement_intent.class);
+//                    intent.putExtra("models",model);
+//                    itemView.getContext().startActivity(intent);
+//                    ((Activity) context).finish();
+//                }
+//            });
 
         }
         public void bind(Anouncements model) {

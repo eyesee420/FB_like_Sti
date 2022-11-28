@@ -20,7 +20,7 @@ public class Admin_Profile extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_profile);
+       // setContentView(R.layout.activity_admin_profile);
 
         binding = ActivityAdminProfileBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
