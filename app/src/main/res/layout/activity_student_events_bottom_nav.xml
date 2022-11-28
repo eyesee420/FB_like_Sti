@@ -47,6 +47,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/bottom_navigation_users"
@@ -55,15 +56,6 @@
     </androidx.recyclerview.widget.RecyclerView>
 
 
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textSize="30dp"
-        android:text="events">
-
-    </TextView>
     <FrameLayout
         style="?attr/actionButtonStyle"
         android:layout_above="@id/bottom_navigation_users"
