@@ -36,7 +36,7 @@
                 </androidx.cardview.widget.CardView>
             </com.google.android.material.card.MaterialCardView>
             <TextView
-                android:id="@+id/what"
+                android:id="@+id/announcement_what"
                 android:text="WHAT ? "
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                 android:textSize="16sp"
@@ -48,7 +48,7 @@
                 android:paddingStart="15sp"
                 android:paddingEnd="15sp"/>
             <TextView
-                android:id="@+id/when"
+                android:id="@+id/announcement_when"
                 android:text="WHEN ?"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                 android:textSize="16sp"
@@ -61,7 +61,7 @@
                 android:paddingStart="15sp"
                 android:paddingEnd="15sp"/>
             <TextView
-                android:id="@+id/how"
+                android:id="@+id/announcement_how"
                 android:text="HOW ?"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                 android:textSize="16sp"
@@ -75,7 +75,7 @@
                 android:paddingEnd="15sp"/>
         </RelativeLayout>
         <TextView
-            android:id="@+id/date_time"
+            android:id="@+id/announcement_date_time"
             android:text="nov/12/ 5/12/43/pm"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
             android:textSize="16sp"

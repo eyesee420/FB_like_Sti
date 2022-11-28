@@ -40,20 +40,20 @@ public class anouncement_adapter extends FirestoreRecyclerAdapter<Anouncements, 
             super(itemView);
             context =itemView.getContext();
             image_view = itemView.findViewById(R.id.image_view);
-            what = itemView.findViewById(R.id.what);
-            when = itemView.findViewById(R.id.when);
-            how = itemView.findViewById(R.id.how);
-            date_time = itemView.findViewById(R.id.date_time);
+            what = itemView.findViewById(R.id.announcement_what);
+            when = itemView.findViewById(R.id.announcement_when);
+            how = itemView.findViewById(R.id.announcement_how);
+            date_time = itemView.findViewById(R.id.announcement_date_time);
 
         }
         public void bind(Anouncements model) {
             Glide.with(context.getApplicationContext())
                     .load(model.getImage_uri())
                     .into(image_view);
-            what.setText("WHAT: " + model.getWhat());
-            when.setText("WHEN: " + model.getWhen());
-            how.setText("HOW: " + model.getHow());
-            date_time.setText("Posted at " + model.getDate_time());
+            what.setText(String.format("WHAT: %s", model.getWhat()));
+            when.setText(String.format("WHEN: %s",model.getWhen()));
+            how.setText(String.format("HOW: %s", model.getHow()));
+            date_time.setText(String.format("Posted at %s", model.getDate_time()));
         }
     }
 }
