@@ -10,4 +10,7 @@
 
     <!-- Customize colors here. -->
     <color name="yellow">#FFDE00</color>
+    <color name="grey">#8B7E74</color>
+
+
 </resources>

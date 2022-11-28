@@ -39,24 +39,29 @@
             android:layout_above="@id/display_name"
             android:layout_marginTop="10dp"
             android:background="@color/white"></View>
+
         <TextView
             android:id="@+id/display_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/card1"
             android:text="STI College Global City"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+
             android:textStyle="bold"></TextView>
 
 
         <TextView
+            android:textColor="@color/grey"
             android:id="@+id/date_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-
+            android:layout_below="@+id/display_name"
+            android:layout_toRightOf="@+id/card1"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
             android:layout_marginEnd="10dp"
             android:text="nov/12/12 5/23/43/pm"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
@@ -84,15 +89,16 @@
             android:id="@+id/card2"
             android:layout_below="@+id/post_text"
             android:layout_width="match_parent"
-            app:cardCornerRadius="20dp"
+            app:cardCornerRadius="8dp"
             android:layout_marginTop="20dp"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
-            android:layout_height="200dp">
+            android:layout_height="400dp">
             <ImageView
                 android:id="@+id/image_view_pic"
                 android:src="@color/yellow"
+                android:scaleType="fitXY"
                 android:layout_below="@+id/post_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -102,27 +108,26 @@
 
         <ImageView
             android:id="@+id/like"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_below="@id/card2"
             android:background="@drawable/like"
-
             android:layout_marginStart="20dp"
             ></ImageView>
+
         <ImageView
-            android:layout_centerHorizontal="true"
             android:id="@+id/comment"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_below="@id/card2"
-            android:background="@drawable/comment"
-            ></ImageView>
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/comment"></ImageView>
         <ImageView
             android:layout_alignParentEnd="true"
             android:id="@+id/share"
             android:layout_marginEnd="20dp"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_below="@id/card2"
             android:background="@drawable/share"
             ></ImageView>
@@ -130,11 +135,12 @@
 
         <TextView
             android:id="@+id/text"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="10dp"
-            android:layout_below="@+id/like"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/like"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
             android:text="Comments">
 
         </TextView>

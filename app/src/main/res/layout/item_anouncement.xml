@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@android:color/darker_gray"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="5dp"
+        app:cardCornerRadius="6dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            app:cardCornerRadius="4dp">
+            <ImageView
+                android:id="@+id/shop_imageview"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_image_24">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:id="@+id/shop_name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/card1"
+        android:paddingStart="15dp"
+        android:text="Tittle"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textSize="16dp"></TextView>
+    <TextView
+        android:id="@+id/Discription"
+        android:layout_below="@+id/shop_name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/card1"
+        android:paddingStart="15dp"
+        android:text="Discriptions"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textSize="16dp"></TextView>
+
+    <TextView
+        android:id="@+id/date_time"
+        android:layout_below="@+id/Discription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/card1"
+        android:paddingStart="15dp"
+        android:text="nov/12/ 5/12/43/pm"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textSize="16dp"></TextView>
+
+
+
+</RelativeLayout>

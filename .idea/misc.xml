@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/Users/me/AndroidStudioProjects/MyApp/app/src/main/res/drawable/badge_background.xml" value="0.169" />
         <entry key="..\:/Users/me/AndroidStudioProjects/MyApp/app/src/main/res/drawable/transparent_rect.xml" value="0.1335" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_admin_add_anouncements.xml" value="0.1953125" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_admin_add_events.xml" value="0.1953125" />
         <entry key="..\:/Users/me/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_admin_add_feed.xml" value="0.209375" />
         <entry key="..\:/Users/me/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_admin_home.xml" value="0.1953125" />
         <entry key="..\:/Users/me/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
@@ -14,6 +16,8 @@
         <entry key="..\:/Users/me/AndroidStudioProjects/MyApp/app/src/main/res/layout/activity_student_profile_bottom_nav.xml" value="0.209375" />
         <entry key="..\:/Users/me/AndroidStudioProjects/MyApp/app/src/main/res/layout/custom_action_item_layout.xml" value="0.5" />
         <entry key="..\:/Users/me/AndroidStudioProjects/MyApp/app/src/main/res/layout/custom_image.xml" value="0.209375" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/MyApp/app/src/main/res/layout/item_anouncement.xml" value="0.22" />
+        <entry key="..\:/Users/me/AndroidStudioProjects/MyApp/app/src/main/res/layout/item_events.xml" value="0.25" />
         <entry key="..\:/Users/me/AndroidStudioProjects/MyApp/app/src/main/res/layout/item_feed.xml" value="0.25" />
         <entry key="..\:/Users/me/AndroidStudioProjects/MyApp/app/src/main/res/menu/admin_menu.xml" value="0.209375" />
         <entry key="..\:/Users/me/AndroidStudioProjects/MyApp/app/src/main/res/menu/main_menu.xml" value="0.22" />
